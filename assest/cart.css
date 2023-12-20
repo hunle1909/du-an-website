@@ -1,0 +1,128 @@
+
+.body-cart{
+    display: grid;
+    max-width: 1300px;
+    min-height: auto;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.update-btn{
+    background-color: rgb(49, 174, 30);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-buy {
+    background-color: #285D5B;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 5px;
+    border-radius: 8px;
+
+}
+.btn-buy:hover {
+    background-color: #ee173a;
+    transition: 1s;
+}
+/* Responsive Cart */
+@media (max-width: 600px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin: 0 0 1rem 0;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "Hình ảnh";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Tên sản phẩm";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Số lượng";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Đơn giá";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Tổng tiền";
+    }
+
+    td:nth-of-type(6):before {
+        content: "Hành động";
+    }
+}

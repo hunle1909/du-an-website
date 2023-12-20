@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    line-height: 1.6;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    max-width:400px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-left: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input,
+form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea {
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+/* Input */
+form input[type="submit"] {
+    background-color: #285d5b;
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #55b6b3;
+}
+input{
+    padding-right: 0px;
+}
+ /* Button */
+form button[type="submit"] {
+    background-color: #285d5b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    
+}
+
+form button[type="submit"]:hover {
+    background-color: #55b6b3;
+}
+form a{
+    display: flex;
+    justify-content: center;
+}
+/* admin add */
+.admin-add {
+    width: 50%; 
+    margin: auto; 
+}
+
+/* admin edit */
+.admin-edit{
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
